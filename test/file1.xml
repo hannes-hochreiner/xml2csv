@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<top>
+  <list>
+    <entry>
+      <field1>value11</field1>
+      <field2>value12</field2>
+    </entry>
+    <entry>
+      <field1>value21</field1>
+      <field2>value22</field2>
+    </entry>
+    <entry>
+      <field1>value31</field1>
+      <field2>value32</field2>
+    </entry>
+  </list>
+</top>

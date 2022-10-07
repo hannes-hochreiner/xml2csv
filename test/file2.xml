@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<top2>
+  <some_list>
+    <some_entry>
+      <another_field1>val11</another_field1>
+      <another_field2>val12</another_field2>
+      <another_field3>val13</another_field3>
+      <another_field4>val14</another_field4>
+    </some_entry>
+    <some_entry>
+      <another_field1>val21</another_field1>
+      <another_field2>val22</another_field2>
+      <another_field3>val23</another_field3>
+      <another_field4>val24</another_field4>
+    </some_entry>
+    <some_entry>
+      <another_field1>val31</another_field1>
+      <another_field2>val32</another_field2>
+      <another_field3>val33</another_field3>
+      <another_field4>val34</another_field4>
+    </some_entry>
+    <some_entry>
+      <another_field1>val41</another_field1>
+      <another_field2>val42</another_field2>
+      <another_field3>val43</another_field3>
+      <another_field4>val44</another_field4>
+    </some_entry>
+  </some_list>
+</top2>
