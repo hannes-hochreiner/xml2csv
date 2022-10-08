@@ -29,7 +29,9 @@ def process_file(input_filename, output_filename):
       if fields[index] != tag:
         raise Exception(f'expected field "{fields[index]}" found field "{tag}"')
 
-      values.append(field.text)
+      text = "" if field.text is None else field.text
+
+      values.append(text)
       index += 1
 
     # print("|".join(values))
