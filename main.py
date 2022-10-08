@@ -2,6 +2,9 @@ import xml.etree.ElementTree as ET
 import os
 import sys
 
+def remove_namespace(tag):
+  return tag[tag.rfind('}') + 1:]
+
 def process_file(input_filename, output_filename):
   print(f'processing "{input_filename}"... writing output to "{output_filename}"')
   tree = ET.parse(input_filename)
@@ -11,7 +14,7 @@ def process_file(input_filename, output_filename):
   fields = []
 
   for entry in root[0][0]:
-    fields.append(entry.tag)
+    fields.append(remove_namespace(entry.tag))
 
   # print("|".join(fields))
   output_file.write("|".join(fields) + "\n")
@@ -21,8 +24,10 @@ def process_file(input_filename, output_filename):
     values = []  
 
     for field in entry:
-      if fields[index] != field.tag:
-        raise Exception(f'expected field "{fields[index]}" found field "{field.tag}"')
+      tag = remove_namespace(field.tag)
+
+      if fields[index] != tag:
+        raise Exception(f'expected field "{fields[index]}" found field "{tag}"')
 
       values.append(field.text)
       index += 1
