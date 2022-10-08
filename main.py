@@ -9,7 +9,7 @@ def process_file(input_filename, output_filename):
   print(f'processing "{input_filename}"... writing output to "{output_filename}"')
   tree = ET.parse(input_filename)
   root = tree.getroot()
-  output_file = open(output_filename,'w')
+  output_file = open(output_filename, mode='w', encoding='utf-8')
 
   fields = []
 
