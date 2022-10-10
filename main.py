@@ -42,7 +42,7 @@ def process_dir(in_dir, out_dir):
 
   for file in files:
     if not file.endswith('.xml'):
-      break
+      continue
 
     input_filename = os.path.join(in_dir, file)
     output_filename = os.path.join(out_dir, file[:-3] + "csv")
